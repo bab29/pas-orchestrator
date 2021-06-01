@@ -1,16 +1,13 @@
 roles:
   # pvwa git repo
-- Name: PVWA Role
-  source: https://github.com/cyberark/pvwa.git
+- source: https://github.com/cyberark/pvwa.git
   type : git
   version: v12.1
 # cpm git repo
-- Name: CPM Role
-  source: https://github.com/cyberark/cpm.git
+- source: https://github.com/cyberark/cpm.git
   type : git
   version: v12.1
 # psm git repo
-- Name: PSM Role
-  source: https://github.com/cyberark/psm.git
+- source: https://github.com/cyberark/psm.git
   type : git
   version: v12.0
