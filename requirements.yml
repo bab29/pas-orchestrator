@@ -11,3 +11,5 @@ roles:
 - src: https://github.com/cyberark/psm.git
   type : git
   version: v12.0
+collections:
+- name: community.windows
