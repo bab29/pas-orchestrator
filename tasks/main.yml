@@ -18,15 +18,6 @@
       prompt: "Please enter the Vault Administrator password"
       private: yes
 
-    - name: ansible_user
-      prompt: "Please enter the Hosts administrator username"
-      default: "Administrator"
-      private: no
-
-    - name: ansible_password
-      prompt: "Please enter the Hosts Administrator password"
-      private: yes
-
     - name: cpm_zip_file_path
       prompt: "Please enter CPM installation package location"
       default: "/tmp/pas_packages/cpm.zip"
