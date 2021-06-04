@@ -3,6 +3,8 @@
 
 - hosts: localhost
   connection: local
+  tags:
+  - debug  
   vars_prompt:
 
     - name: accept_eula
@@ -37,8 +39,7 @@
 
     - name: Set required parameters from prompt
       include_tasks: set_facts.yml
-      tags:
-        - debug      
+    
 
 - hosts: pvwa:cpm:psm
   strategy: free
