@@ -37,10 +37,13 @@
 
     - name: Set required parameters from prompt
       include_tasks: set_facts.yml
+      tags:
+        - debug      
 
 - hosts: pvwa:cpm:psm
   strategy: free
-
+  tags:
+  - debug
   tasks:
 
     - include_tasks: cpm.yml
@@ -55,6 +58,8 @@
 
 - hosts: pvwa:cpm:psm
   serial: 1
+  tags:
+  - debug
   tasks:
 
     - include_tasks: register_pvwa.yml
