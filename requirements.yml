@@ -2,14 +2,11 @@ roles:
   # pvwa git repo
 - src: https://github.com/bab29/pvwa.git
   type : git
-  version: v12.1
 # cpm git repo
 - src: https://github.com/bab29/cpm.git
   type : git
-  version: v12.1
 # psm git repo
 - src: https://github.com/bab29/psm.git
   type : git
-  version: v12.0
 collections:
 - name: community.windows
