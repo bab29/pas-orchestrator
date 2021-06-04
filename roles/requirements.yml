@@ -4,11 +4,11 @@
   version: v12.1
 
 # cpm git repo
-- src: https://github.com/cyberark/cpm.git
+- src: https://github.com/bab29/cpm.git
   scm: git
   version: v12.1
 
 # psm git repo
-- src: https://github.com/cyberark/psm.git
+- src: https://github.com/bab29/psm.git
   scm: git
   version: v12.0
