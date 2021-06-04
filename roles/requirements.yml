@@ -1,14 +1,11 @@
 # pvwa git repo
 - src: https://github.com/bab29/pvwa.git
   scm: git
-  version: v12.1
 
 # cpm git repo
 - src: https://github.com/bab29/cpm.git
   scm: git
-  version: v12.1
 
 # psm git repo
 - src: https://github.com/bab29/psm.git
   scm: git
-  version: v12.0
