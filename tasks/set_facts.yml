@@ -10,4 +10,11 @@
     cpm_zip_file_path: "{{ cpm_zip_file_path }}"
     pvwa_zip_file_path: "{{ pvwa_zip_file_path }}"
     psm_zip_file_path: "{{ psm_zip_file_path }}"
-  no_log: true
+    
+    ansible_become: true
+    ansible_become_flags: logon_type=new_credentials logon_flags=netcredentials_only
+    ansible_become_method: runas
+    ansible_become_password: "{{ ansible_password }}"
+    ansible_become_user: "{{ ansible_user }}"
+
+no_log: true
