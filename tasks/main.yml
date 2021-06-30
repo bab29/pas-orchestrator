@@ -36,8 +36,9 @@
       private: no
 
   tasks:
-
-
+    - name: Set required parameters from prompt
+      include_tasks: set_facts.yml
+      
 - hosts: pvwa:cpm:psm
   strategy: free
   tags:
