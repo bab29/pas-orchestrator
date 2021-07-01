@@ -16,10 +16,6 @@
       prompt: "Please enter the Vault ip address"
       private: no
 
-    - name: ansible_password
-      prompt: "Please enter the User password"
-      private: yes
-
     - name: vault_password
       prompt: "Please enter the Vault Administrator password"
       private: yes
