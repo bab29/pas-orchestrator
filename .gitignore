@@ -1,6 +1,7 @@
 # ignore all retries files
 *.retry
 .idea/*
+requirements.yml
 
 # ignore components symlink
 roles/cpm
