@@ -3,7 +3,7 @@
 - name: PVWA Role Block
   block:
 
-    - include_role:
+    - ansible.builtin.include_role:
         name: pvwa
       vars:
         - pvwa_extract: true
@@ -16,7 +16,7 @@
 
   rescue:
 
-    - include_role:
+    - ansible.builtin.include_role:
         name: pvwa
       vars:
         - pvwa_extract: true

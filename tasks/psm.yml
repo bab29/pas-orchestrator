@@ -1,6 +1,6 @@
 ---
 
-- include_role:
+- ansible.builtin.include_role:
     name: psm
   vars:
     - psm_extract: true

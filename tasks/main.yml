@@ -37,7 +37,7 @@
 
   tasks:
     - name: Set required parameters from prompt
-      include_tasks: set_facts.yml
+      ansible.builtin.include_tasks: set_facts.yml
       
 - hosts: pvwa:cpm:psm
   strategy: free
@@ -45,11 +45,11 @@
   - debug
   tasks:
 
-    - include_tasks: cpm.yml
+    - ansible.builtin.include_tasks: cpm.yml
       when: "'cpm' in group_names"
-    - include_tasks: pvwa.yml
+    - ansible.builtin.include_tasks: pvwa.yml
       when: "'pvwa' in group_names"
-    - include_tasks: psm.yml
+    - ansible.builtin.include_tasks: psm.yml
       when: "'psm' in group_names"
 
 
@@ -61,9 +61,9 @@
   - debug
   tasks:
 
-    - include_tasks: register_pvwa.yml
+    - ansible.builtin.include_tasks: register_pvwa.yml
       when: "'pvwa' in group_names"
-    - include_tasks: register_cpm.yml
+    - ansible.builtin.include_tasks: register_cpm.yml
       when: "'cpm' in group_names"
-    - include_tasks: register_psm.yml
+    - ansible.builtin.include_tasks: register_psm.yml
       when: "'psm' in group_names"

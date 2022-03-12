@@ -1,6 +1,6 @@
 ---
 - name: Pass input parameters to relevant roles
-  set_fact:
+  ansible.builtin.set_fact:
     accept_eula: "{{ accept_eula }}"
     vault_ip: "{{ vault_ip }}"
     vault_password: "{{ vault_password }}"
